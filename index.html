@@ -1,89 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prime Factorisation Chart</title>
 
-  <style>
-    body {
-      margin: 5px;
-    }
 
-    section {
-      display: flex;
-      flex-wrap: wrap;
-      align-content: center;
-      justify-content: center;
-    }
+  <link rel="manifest" href="imgs/favicons/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicons/favicon-16x16.png">
+  <link rel="mask-icon" href="imgs/favicons/safari-pinned-tab.svg" color="#b91d47">
+  <link rel="shortcut icon" href="imgs/favicons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="PrimeFactors">
+  <meta name="application-name" content="PrimeFactors">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    div {
-      box-sizing: border-box;
-      width: 75px;
-      height: 75px;
-      border: 1px solid gray;
-    }
+  <meta name="msapplication-TileColor" content="#b91d47">
+  <meta name="msapplication-config" content="imgs/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-    .subsection {
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: row;
-    }
+  <meta property="og:title" content="Prime Factors" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fania.github.io/prime-fact-chart" />
+  <meta property="og:image" content="imgs/screenshot.png" />
 
-    .subsection div {
-      width: calc(75px /2);
-      height: 75px;
-      border: 0.5px solid gray;
-    }
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prime Factors">
+  <meta name="twitter:image" content="https://fania.eu/stuff/prime-facts.png">
 
-    .sidesection {
-      flex-direction: column;
-    }
-
-    .sidesection div {
-      height: calc(75px /3);
-      width: 75px;
-    }
-
-    /* prime colours */
-    .n1 { background: white; }
-    .n2 { background: blue; }
-    .n3 { background: red; }
-    .n5 { background: yellow; }
-    .n7 { background: black; }
-    .n11 { background: magenta; }
-    .n13 { background: cyan; }
-    .n17 { background: coral; }
-    .n19 { background: darkgreen; }
-    .n23 { background: indigo; }
-    .n23 { background: rgb(44, 0, 205); }
-    .n29 { background: maroon; }
-    .n31 { background: lightgreen; }
-    .n37 { background: teal; }
-    .n41 { background: orchid; }
-    .n43 { background: goldenrod; }
-    .n47 { background: royalblue; }
-    .n49 { background: purple; }
-    .n53 { background: brown; }
-    .n59 { background: tomato; }
-    .n61 { background: khaki; }
-    .n67 { background: gray; }
-    .n71 { background: green; }
-    .n73 { background: violet; }
-    .n79 { background: paleturquoise; }
-    .n83 { background: slateblue; }
-    .n89 { background: darkslategray; }
-    .n97 { background: navy; }
-
-    @media only screen and (min-width: 400px) {
-      body {
-        margin: 30px;
-      }
-    }
-
-
-  </style>
-
+  <link href="styles.css" rel="stylesheet">
 
 </head>
 <body>
