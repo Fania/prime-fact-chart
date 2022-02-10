@@ -6,9 +6,9 @@
   <title>Prime Factorisation Chart</title>
 
   <style>
-    * {
+    /* * {
       box-sizing: border-box;
-    }
+    } */
 
     body {
       margin: 30px;
@@ -19,12 +19,15 @@
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
+      border-collapse: collapse;
     }
 
     div {
+      box-sizing: border-box;
       width: 75px;
       height: 75px;
       border: 1px solid gray;
+      /* border-collapse: collapse; */
     }
 
     .subsection {
@@ -32,21 +35,51 @@
       flex-wrap: nowrap;
     }
 
+
     .subsection div {
       width: calc(75px /2);
       height: 75px;
+      border: 0.5px solid gray;
     }
 
-    #n1 { background: white; }
-    #n2 { background: blue; }
-    #n3 { background: red; }
-    #n4 { background: blue; }
-    #n5 { background: yellow; }
+    .subsection .side {
+      flex-direction: column;
+    }
+
+    .subsection .side div {
+      height: calc(75px /3);
+      width: 75px;
+    }
 
 
-
-
-
+    .n1 { background: white; }
+    .n2 { background: blue; }
+    .n3 { background: red; }
+    .n5 { background: yellow; }
+    .n7 { background: black; }
+    .n11 { background: magenta; }
+    .n13 { background: cyan; }
+    .n17 { background: coral; }
+    .n19 { background: darkgreen; }
+    .n23 { background: indigo; }
+    .n23 { background: mediumblue; }
+    .n29 { background: maroon; }
+    .n31 { background: lightgreen; }
+    .n37 { background: teal; }
+    .n41 { background: orchid; }
+    .n43 { background: goldenrod; }
+    .n47 { background: royalblue; }
+    .n49 { background: purple; }
+    .n53 { background: brown; }
+    .n59 { background: tomato; }
+    .n61 { background: khaki; }
+    .n67 { background: gray; }
+    .n71 { background: green; }
+    .n73 { background: violet; }
+    .n79 { background: paleturquoise; }
+    .n83 { background: slateblue; }
+    .n89 { background: darkslategray; }
+    .n97 { background: navy; }
 
   </style>
 
@@ -55,175 +88,351 @@
 <body>
 
   <section>
-    <div id="n1"></div>
-    <div id="n2"></div>
-    <div id="n3"></div>
-    <div id="n4">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n1"></div>
+    <div class="n2"></div>
+    <div class="n3"></div>
+    <div class="n4">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div>
+      </section>
     </div>
-    <div id="n5"></div>
-    <div id="n6">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n5"></div>
+    <div class="n6">
+      <section class="subsection">
+        <div class="n2"></div><div class="n3"></div>
+      </section>
     </div>
-    <div id="n7"></div>
-    <div id="n8"></div>
-    <div id="n9">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n7"></div>
+    <div class="n8">
+      <section class="subsection side">
+        <div class="n2"></div><div class="n2"></div><div class="n2"></div>
+      </section>
     </div>
-    <div id="n10">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n9">
+      <section class="subsection">
+        <div class="n3"></div><div class="n3"></div>
+      </section>
+    </div>
+    <div class="n10">
+      <section class="subsection"><div class="n2"></div><div class="n5"></div></section>
     </div>
 
-    <div id="n11"></div>
-    <div id="n12"></div>
-    <div id="n13"></div>
-    <div id="n14">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n11"></div>
+    <div class="n12">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n3"></div>
+      </section>
     </div>
-    <div id="n15">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n13"></div>
+    <div class="n14">
+      <section class="subsection"><div class="n2"></div><div class="n7"></div></section>
     </div>
-    <div id="n16"></div>
-    <div id="n17"></div>
-    <div id="n18"></div>
-    <div id="n19"></div>
-    <div id="n20"></div>
+    <div class="n15">
+      <section class="subsection"><div class="n3"></div><div class="n5"></div></section>
+    </div>
+    <div class="n16">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n2"></div>
+      </section>
+    </div>
+    <div class="n17"></div>
+    <div class="n18">
+      <section class="subsection">
+        <div class="n2"></div><div class="n3"></div><div class="n3"></div>
+      </section>
+    </div>
+    <div class="n19"></div>
+    <div class="n20">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n5"></div>
+      </section>
+    </div>
 
-    <div id="n21">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n21">
+      <section class="subsection"><div class="n3"></div><div class="n7"></div></section>
     </div>
-    <div id="n22">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n22">
+      <section class="subsection"><div class="n2"></div><div class="n11"></div></section>
     </div>
-    <div id="n23"></div>
-    <div id="n24"></div>
-    <div id="n25">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n23"></div>
+    <div class="n24">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n3"></div>
+      </section>
     </div>
-    <div id="n26">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n25">
+      <section class="subsection"><div class="n5"></div><div class="n5"></div></section>
     </div>
-    <div id="n27"></div>
-    <div id="n28"></div>
-    <div id="n29"></div>
-    <div id="n30"></div>
+    <div class="n26">
+      <section class="subsection"><div class="n2"></div><div class="n13"></div></section>
+    </div>
+    <div class="n27">
+      <section class="subsection">
+        <div class="n3"></div><div class="n3"></div><div class="n3"></div>
+      </section>
+    </div>
+    <div class="n28">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n7"></div>
+      </section>
+    </div>
+    <div class="n29"></div>
+    <div class="n30">
+      <section class="subsection">
+        <div class="n2"></div><div class="n3"></div><div class="n5"></div>
+      </section>
+    </div>
 
-    <div id="n31"></div>
-    <div id="n32"></div>
-    <div id="n33">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n31"></div>
+    <div class="n32">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n2"></div>
+      </section>
     </div>
-    <div id="n34">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n33">
+      <section class="subsection"><div class="n3"></div><div class="n11"></div></section>
     </div>
-    <div id="n35">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n34">
+      <section class="subsection"><div class="n2"></div><div class="n17"></div></section>
     </div>
-    <div id="n36"></div>
-    <div id="n37"></div>
-    <div id="n38">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n35">
+      <section class="subsection"><div class="n5"></div><div class="n7"></div></section>
     </div>
-    <div id="n39">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n36">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n3"></div><div class="n3"></div>
+      </section>
     </div>
-    <div id="n40"></div>
+    <div class="n37"></div>
+    <div class="n38">
+      <section class="subsection"><div class="n2"></div><div class="n19"></div></section>
+    </div>
+    <div class="n39">
+      <section class="subsection"><div class="n3"></div><div class="n13"></div></section>
+    </div>
+    <div class="n40">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n5"></div>
+      </section>
+    </div>
 
-    <div id="n41"></div>
-    <div id="n42"></div>
-    <div id="n43"></div>
-    <div id="n44"></div>
-    <div id="n45"></div>
-    <div id="n46">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n41"></div>
+    <div class="n42">
+      <section class="subsection">
+        <div class="n2"></div><div class="n3"></div><div class="n7"></div>
+      </section>
     </div>
-    <div id="n47"></div>
-    <div id="n48"></div>
-    <div id="n49"></div>
-    <div id="n50"></div>
+    <div class="n43"></div>
+    <div class="n44">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n11"></div>
+      </section>
+    </div>
+    <div class="n45">
+      <section class="subsection">
+        <div class="n3"></div><div class="n3"></div><div class="n5"></div>
+      </section>
+    </div>
+    <div class="n46">
+      <section class="subsection"><div class="n2"></div><div class="n23"></div></section>
+    </div>
+    <div class="n47"></div>
+    <div class="n48">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n3"></div>
+      </section>
+    </div>
+    <div class="n49">
+      <section class="subsection">
+        <div class="n7"></div><div class="n7">
+      </section>
+    </div>
+    <div class="n50">
+      <section class="subsection">
+        <div class="n2"></div><div class="n5"></div><div class="n5"></div>
+      </section>
+    </div>
 
-    <div id="n51">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n51">
+      <section class="subsection"><div class="n3"></div><div class="n17"></div></section>
     </div>
-    <div id="n52"></div>
-    <div id="n53"></div>
-    <div id="n54"></div>
-    <div id="n55">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n52">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n13"></div>
+      </section>
     </div>
-    <div id="n56"></div>
-    <div id="n57">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n53"></div>
+    <div class="n54">
+      <section class="subsection">
+        <div class="n2"></div><div class="n3"></div><div class="n3"></div><div class="n3"></div>
+      </section>
     </div>
-    <div id="n58">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n55">
+      <section class="subsection"><div class="n5"></div><div class="n11"></div></section>
     </div>
-    <div id="n59"></div>
-    <div id="n60"></div>
+    <div class="n56">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n7"></div>
+      </section>
+    </div>
+    <div class="n57">
+      <section class="subsection"><div class="n3"></div><div class="n19"></div></section>
+    </div>
+    <div class="n58">
+      <section class="subsection"><div class="n2"></div><div class="n29"></div></section>
+    </div>
+    <div class="n59"></div>
+    <div class="n60">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n3"></div><div class="n5"></div>
+      </section>
+    </div>
 
-    <div id="n61"></div>
-    <div id="n62">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n61"></div>
+    <div class="n62">
+      <section class="subsection"><div class="n2"></div><div class="n31"></div></section>
     </div>
-    <div id="n63"></div>
-    <div id="n64"></div>
-    <div id="n65">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n63">
+      <section class="subsection">
+        <div class="n3"></div><div class="n3"></div><div class="n7"></div>
+      </section>
     </div>
-    <div id="n66"></div>
-    <div id="n67"></div>
-    <div id="n68"></div>
-    <div id="n69">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n64">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n2"></div>
+      </section>
     </div>
-    <div id="n70"></div>
+    <div class="n65">
+      <section class="subsection"><div class="n5"></div><div class="n13"></div></section>
+    </div>
+    <div class="n66">
+      <section class="subsection">
+        <div class="n2"></div><div class="n3"></div><div class="n11"></div>
+      </section>
+    </div>
+    <div class="n67"></div>
+    <div class="n68">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n17"></div>
+      </section>
+    </div>
+    <div class="n69">
+      <section class="subsection"><div class="n3"></div><div class="n23"></div></section>
+    </div>
+    <div class="n70">
+      <section class="subsection">
+        <div class="n2"></div><div class="n5"></div><div class="n7"></div>
+      </section>
+    </div>
 
-    <div id="n71"></div>
-    <div id="n72"></div>
-    <div id="n73"></div>
-    <div id="n74">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n71"></div>
+    <div class="n72">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n3"></div><div class="n3"></div>
+      </section>
     </div>
-    <div id="n75"></div>
-    <div id="n76"></div>
-    <div id="n77">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n73"></div>
+    <div class="n74">
+      <section class="subsection"><div class="n2"></div><div class="n37"></div></section>
     </div>
-    <div id="n78"></div>
-    <div id="n79"></div>
-    <div id="n80"></div>
+    <div class="n75">
+      <section class="subsection">
+        <div class="n3"></div><div class="n5"></div><div class="n5"></div>
+      </section>
+    </div>
+    <div class="n76">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n19"></div>
+      </section>
+    </div>
+    <div class="n77">
+      <section class="subsection"><div class="n7"></div><div class="n11"></div></section>
+    </div>
+    <div class="n78">
+      <section class="subsection">
+        <div class="n2"></div><div class="n3"></div><div class="n13"></div>
+      </section>
+    </div>
+    <div class="n79"></div>
+    <div class="n80">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n5"></div>
+      </section>
+    </div>
 
-    <div id="n81"></div>
-    <div id="n82">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n81">
+      <section class="subsection">
+        <div class="n3"></div><div class="n3"></div><div class="n3"></div><div class="n3"></div>
+      </section>
     </div>
-    <div id="n83"></div>
-    <div id="n84"></div>
-    <div id="n85"></div>
-    <div id="n86"></div>
-    <div id="n87"></div>
-    <div id="n88"></div>
-    <div id="n89"></div>
-    <div id="n90"></div>
+    <div class="n82">
+      <section class="subsection"><div class="n2"></div><div class="n41"></div></section>
+    </div>
+    <div class="n83"></div>
+    <div class="n84">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n3"></div><div class="n7"></div>
+      </section>
+    </div>
+    <div class="n85">
+      <section class="subsection"><div class="n5"></div><div class="n17"></div></section>
+    </div>
+    <div class="n86">
+      <section class="subsection"><div class="n2"></div><div class="n43"></div></section>
+    </div>
+    <div class="n87">
+      <section class="subsection"><div class="n3"></div><div class="n29"></div></section>
+    </div>
+    <div class="n88">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n11"></div>
+      </section>
+    </div>
+    <div class="n89"></div>
+    <div class="n90">
+      <section class="subsection">
+        <div class="n2"></div><div class="n3"></div><div class="n3"></div><div class="n5"></div>
+      </section>
+    </div>
 
-    <div id="n91">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n91">
+      <section class="subsection"><div class="n7"></div><div class="n13"></div></section>
     </div>
-    <div id="n92"></div>
-    <div id="n93">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n92">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n23"></div>
+      </section>
     </div>
-    <div id="n94">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n93">
+      <section class="subsection"><div class="n3"></div><div class="n31"></div></section>
     </div>
-    <div id="n95">
-      <section class="subsection"><div></div><div></div></section>
+    <div class="n94">
+      <section class="subsection"><div class="n2"></div><div class="n47"></div></section>
     </div>
-    <div id="n96"></div>
-    <div id="n97"></div>
-    <div id="n98"></div>
-    <div id="n99"></div>
-    <div id="n100"></div>
+    <div class="n95">
+      <section class="subsection"><div class="n5"></div><div class="n19"></div></section>
+    </div>
+    <div class="n96">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n2"></div><div class="n3"></div>
+      </section>
+    </div>
+    <div class="n97"></div>
+    <div class="n98">
+      <section class="subsection">
+        <div class="n2"></div><div class="n7"></div><div class="n7"></div>
+      </section>
+    </div>
+    <div class="n99">
+      <section class="subsection">
+        <div class="n3"></div><div class="n3"></div><div class="n11"></div>
+      </section>
+    </div>
+    <div class="n100">
+      <section class="subsection">
+        <div class="n2"></div><div class="n2"></div><div class="n5"></div><div class="n5"></div>
+      </section>
+    </div>
   </section>
 
 
