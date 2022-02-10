@@ -6,12 +6,8 @@
   <title>Prime Factorisation Chart</title>
 
   <style>
-    /* * {
-      box-sizing: border-box;
-    } */
-
     body {
-      margin: 30px;
+      margin: 5px;
     }
 
     section {
@@ -19,7 +15,6 @@
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
-      /* border-collapse: collapse; */
     }
 
     div {
@@ -27,7 +22,6 @@
       width: 75px;
       height: 75px;
       border: 1px solid gray;
-      /* border-collapse: collapse; */
     }
 
     .subsection {
@@ -36,18 +30,17 @@
       flex-direction: row;
     }
 
-
     .subsection div {
       width: calc(75px /2);
       height: 75px;
       border: 0.5px solid gray;
     }
 
-    .side {
+    .sidesection {
       flex-direction: column;
     }
 
-    .side div {
+    .sidesection div {
       height: calc(75px /3);
       width: 75px;
     }
@@ -63,7 +56,7 @@
     .n17 { background: coral; }
     .n19 { background: darkgreen; }
     .n23 { background: indigo; }
-    .n23 { background: mediumblue; }
+    .n23 { background: rgb(44, 0, 205); }
     .n29 { background: maroon; }
     .n31 { background: lightgreen; }
     .n37 { background: teal; }
@@ -81,6 +74,13 @@
     .n83 { background: slateblue; }
     .n89 { background: darkslategray; }
     .n97 { background: navy; }
+
+    @media only screen and (min-width: 400px) {
+      body {
+        margin: 30px;
+      }
+    }
+
 
   </style>
 
@@ -105,7 +105,7 @@
     </div>
     <div class="n7"></div>
     <div class="n8">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n2"></div><div class="n2"></div>
       </section>
     </div>
@@ -122,7 +122,7 @@
 
     <div class="n11"></div>
     <div class="n12">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n2"></div><div class="n3"></div>
       </section>
     </div>
@@ -144,13 +144,13 @@
     </div>
     <div class="n17"></div>
     <div class="n18">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n3"></div><div class="n3"></div>
       </section>
     </div>
     <div class="n19"></div>
     <div class="n20">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n2"></div><div class="n5"></div>
       </section>
     </div>
@@ -182,18 +182,18 @@
       </section>
     </div>
     <div class="n27">
-      <section class="side">
+      <section class="sidesection">
         <div class="n3"></div><div class="n3"></div><div class="n3"></div>
       </section>
     </div>
     <div class="n28">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n2"></div><div class="n7"></div>
       </section>
     </div>
     <div class="n29"></div>
     <div class="n30">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n3"></div><div class="n5"></div>
       </section>
     </div>
@@ -205,7 +205,9 @@
       </section>
     </div>
     <div class="n33">
-      <section class="side"><div class="n3"></div><div class="n11"></div></section>
+      <section class="subsection">
+        <div class="n3"></div><div class="n11"></div>
+      </section>
     </div>
     <div class="n34">
       <section class="subsection">
@@ -241,18 +243,18 @@
 
     <div class="n41"></div>
     <div class="n42">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n3"></div><div class="n7"></div>
       </section>
     </div>
     <div class="n43"></div>
     <div class="n44">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n2"></div><div class="n11"></div>
       </section>
     </div>
     <div class="n45">
-      <section class="side">
+      <section class="sidesection">
         <div class="n3"></div><div class="n3"></div><div class="n5"></div>
       </section>
     </div>
@@ -273,7 +275,7 @@
       </section>
     </div>
     <div class="n50">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n5"></div><div class="n5"></div>
       </section>
     </div>
@@ -284,7 +286,7 @@
       </section>
     </div>
     <div class="n52">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n2"></div><div class="n13"></div>
       </section>
     </div>
@@ -328,7 +330,7 @@
       </section>
     </div>
     <div class="n63">
-      <section class="side">
+      <section class="sidesection">
         <div class="n3"></div><div class="n3"></div><div class="n7"></div>
       </section>
     </div>
@@ -343,13 +345,13 @@
       </section>
     </div>
     <div class="n66">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n3"></div><div class="n11"></div>
       </section>
     </div>
     <div class="n67"></div>
     <div class="n68">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n2"></div><div class="n17"></div>
       </section>
     </div>
@@ -359,7 +361,7 @@
       </section>
     </div>
     <div class="n70">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n5"></div><div class="n7"></div>
       </section>
     </div>
@@ -377,12 +379,12 @@
       </section>
     </div>
     <div class="n75">
-      <section class="side">
+      <section class="sidesection">
         <div class="n3"></div><div class="n5"></div><div class="n5"></div>
       </section>
     </div>
     <div class="n76">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n2"></div><div class="n19"></div>
       </section>
     </div>
@@ -392,7 +394,7 @@
       </section>
     </div>
     <div class="n78">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n3"></div><div class="n13"></div>
       </section>
     </div>
@@ -452,7 +454,7 @@
       </section>
     </div>
     <div class="n92">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n2"></div><div class="n23"></div>
       </section>
     </div>
@@ -478,12 +480,12 @@
     </div>
     <div class="n97"></div>
     <div class="n98">
-      <section class="side">
+      <section class="sidesection">
         <div class="n2"></div><div class="n7"></div><div class="n7"></div>
       </section>
     </div>
     <div class="n99">
-      <section class="side">
+      <section class="sidesection">
         <div class="n3"></div><div class="n3"></div><div class="n11"></div>
       </section>
     </div>
