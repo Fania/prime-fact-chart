@@ -1,4 +1,8 @@
 const col = randomColor({luminosity: 'bright', count: 27});
+// const col = randomColor({hue: 'random', luminosity: 'random', count: 27});
+// const col = randomColor({luminosity: 'dark', count: 27});
+// const col = randomColor({luminosity: 'light',count: 27});
+// const col = randomColor({hue: 'green', count: 27});
 
 const texts = [
   `.n1  { background: ${col[0]};  }`,
@@ -34,6 +38,11 @@ texts.forEach(text => {
 
   const sheet = document.styleSheets[0];
   const [...rules] = sheet.cssRules;
+
+  const primeRuleIndex = rules.findIndex(rule => rule.selectorText.startsWith(".n"));
+  sheet.deleteRule(primeRuleIndex);
+
+
   sheet.insertRule(text, sheet.cssRules.length);
 
 });

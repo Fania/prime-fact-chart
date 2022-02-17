@@ -6,13 +6,13 @@ section {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 div {
   box-sizing: border-box;
   /* 75px */
-  --boxSize: calc((100vh - 60px)/10);
+  --boxSize: calc(((100vh - 60px)/10)/1.4);
   width: var(--boxSize);
   height: var(--boxSize);
   border: 1px solid gray;
@@ -76,4 +76,10 @@ div {
   body {
     margin: 30px;
   }
+
+  div {
+    /* 75px */
+    --boxSize: calc((100vh - 60px)/10);
+  }
+
 }
