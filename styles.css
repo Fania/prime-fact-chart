@@ -1,8 +1,11 @@
 body {
   margin: 5px;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 section {
+  /* margin: 0 auto; */
+  /* text-align: center; */
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -12,7 +15,8 @@ section {
 div {
   box-sizing: border-box;
   /* 75px */
-  --boxSize: calc(((100vh - 60px)/10)/1.4);
+  /* --boxSize: calc(((100vh - 10px)/13)); */
+  --boxSize: calc(((100vw - 10px)/8));
   width: var(--boxSize);
   height: var(--boxSize);
   border: 1px solid gray;
@@ -72,7 +76,7 @@ div {
 .n97 { background: navy; }
 
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 500px) {
   body {
     margin: 30px;
   }
